@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+
+    <!-- Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="Ultah Novi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <header>
+            <h1>🎉 Selamat Ulang Tahun! Novita Purnamasari 🎉</h1>
+        </header>
+        <main>
+            <section class="main-content">
+                <img src="Kue Biru.png" alt="Kue Ulang Tahun" class="birthday-image">
+                <p class="message">
+                    Happy birthday! Today is a very special day, and I am very happy to be able to celebrate it with you. At this new age, I am sure you will achieve many great things in your upcoming career journey. May the coming year be filled with courage, passion, and perseverance to pursue all the dreams and goals you have set. Remember that every small step you take will bring you closer to the big success you dream of. I really admire your determination and dedication. May you always be blessed with good health, happiness, and support from loved ones around you. Never hesitate to pursue what you want, because you have great potential to achieve all your dreams. Enjoy this special day with joy, and get ready to face a future that is bright and full of opportunities. Happy birthday! May all the best always accompany you in every step of your career journey.U</p>
+                <button id="surpriseButton">Klik untuk kejutan!</button>
+                <div id="surpriseMessage" class="hidden">
+                    <p>Selamat! Kamu mendapatkan kejutan spesial hari ini!</p>
+                    <div class="video-container">
+                        <video id="birthdayVideo" controls autoplay>
+                            <source src="happy_birthday.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                </div>
+                <button id="playMusic">Putar Musik</button>
+            </section>
+
+            <section class="gallery">
+                <h2>Galeri Foto</h2>
+                <div class="gallery-grid">
+                    <a href="Novi 1.JPG" class="gallery-item" data-lightbox="gallery"><img src="Novi 1.JPG" alt="Foto 1"></a>
+                    <a href="Novi 2.JPG" class="gallery-item" data-lightbox="gallery"><img src="Novi 2.JPG" alt="Foto 2"></a>
+                    <a href="Novi 3.JPG" class="gallery-item" data-lightbox="gallery"><img src="Novi 3.JPG" alt="Foto 3"></a>
+                    <a href="Novi 4.JPG" class="gallery-item" data-lightbox="gallery"><img src="Novi 4.JPG" alt="Foto 4"></a>
+                    <a href="Novi 5.JPG" class="gallery-item" data-lightbox="gallery"><img src="Novi 5.JPG" alt="Foto 5"></a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Developer : Wanz</p>
+            <a href="https://wa.me/6282282214210?text=Selamat%20ulang%20tahun%20novi,%20Panjang%20umur%20dan%20sehat%20selalu%20ya." target="_blank" class="whatsapp-button">
+                Kirim Pesan Kepada Wanz
+            </a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-lightbox@2.1.6/dist/simple-lightbox.min.js"></script>
+</body>
+</html>
+<!-- Tombol untuk memutar video tambahan -->
+<button id="playAnotherVideoButton">Klik untuk video lainnya!</button>
+
+<!-- Div untuk menampilkan video tambahan -->
+<div id="anotherVideoMessage" class="hidden">
+    <p>You are the special💝</p>
+    <div class="video-container">
+        <video id="anotherVideo" controls>
+            <source src="You are the special.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+        </video>
+    </div>
+</div>

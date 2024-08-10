@@ -1,0 +1,278 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Background animation */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background: url('Ultah\ Novi\ Blur.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.balloon {
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background: url('star') no-repeat center center;
+    background-size: contain;
+    animation: float 10s infinite;
+}
+
+.balloon:nth-child(1) {
+    left: 10%;
+    animation-duration: 12s;
+}
+
+.balloon:nth-child(2) {
+    left: 30%;
+    animation-duration: 15s;
+}
+
+.balloon:nth-child(3) {
+    left: 50%;
+    animation-duration: 18s;
+}
+
+.balloon:nth-child(4) {
+    left: 70%;
+    animation-duration: 20s;
+}
+
+.balloon:nth-child(5) {
+    left: 90%;
+    animation-duration: 22s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(135deg, #000000, #3533cd);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Main content styling */
+.main-content {
+    position: relative;
+    margin: 40px 0;
+}
+
+.birthday-image {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.message {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+button {
+    background-color: #3533cd;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #3533cd;
+    transform: scale(1.05);
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Surprise message styling */
+#surpriseMessage {
+    background-color: #fff8dc;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: center auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Gallery styling */
+.gallery {
+    margin: 40px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #3533cd;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .birthday-image {
+        width: 90%;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 12px 24px;
+    }
+
+    .message {
+        font-size: 1.2em;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+/* Tombol baru untuk memutar video tambahan */
+#playAnotherVideoButton {
+    background-color: #3533cd;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#playAnotherVideoButton:hover {
+    background-color: #3CB371;
+    transform: scale(1.05);
+}
+
+/* Gaya untuk video tambahan */
+#anotherVideoMessage {
+    background-color: #f0fff0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Gaya untuk video tambahan dengan background khusus */
+#anotherVideoMessage {
+    background-image: url('Ultah\ Novi\ Blur.png'); /* Ganti dengan path gambar latar belakang */
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; /* Mengubah warna teks agar kontras dengan background */
+}
+
+#anotherVideoMessage p {
+    background-color: rgba(0, 0, 0, 0.5); /* Memberi latar belakang semi-transparan pada teks */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
