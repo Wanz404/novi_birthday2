@@ -276,3 +276,41 @@ footer {
     border-radius: 5px;
     display: inline-block;
 }
+/* CSS for WhatsApp Button */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.whatsapp-button:hover {
+    background-color: #20b358;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button:active {
+    transform: translateY(0);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensuring the button is centered if needed */
+footer {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .whatsapp-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
