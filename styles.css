@@ -7,8 +7,8 @@
 
 /* General body styling */
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    font-family: 'Poppins', italic;
+    color: #f0f8ff;
     position: relative;
     overflow-x: hidden;
 }
@@ -74,9 +74,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(135deg, #7b99dbdc, #1246b8e0); /* Gradient dari biru muda ke biru gelap */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 /* Header styling */
@@ -143,12 +143,12 @@ button:hover {
 
 /* Surprise message styling */
 #surpriseMessage {
-    background-color: #fff8dc;
+    background-color: #ffffff;
     border: 1px solid #ccc;
     padding: 20px;
     margin: center auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     animation: fadeIn 1s;
     font-family: Arial, Helvetica, sans-serif;
     
